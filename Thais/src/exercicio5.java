@@ -13,6 +13,14 @@ public class exercicio5 {
         System.out.print("Digite o número de votos nulos: ");
         int votosnulos = in.nextInt();
 
-        double um = eleitores;
+        int válidos = eleitores - votosembranco - votosnulos;
+        double percentVálidos = (válidos*100.0) / eleitores;
+        double percentVotosembranco = (votosembranco*100.0) / eleitores;
+        double percentVotosnulos = (votosnulos*100.0) / eleitores;
+
+        System.out.printf("%% de votos válidos: %.2f%%\n",+ percentVálidos);
+        System.out.printf("%% de votos votos em branco: %.2f%%\n",+ percentVotosnulos);
+        System.out.printf("%% de votos votos nulos: %.2f%%\n",+percentVotosnulos);
     }
 }
+// acho q sim
