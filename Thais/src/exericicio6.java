@@ -16,3 +16,4 @@ public class exericicio6 {
         System.out.println("Seu novo salário é: "+ novosalario);
     }
 }
+//verificar
