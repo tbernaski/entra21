@@ -7,6 +7,6 @@ public class exercicio14 {
         System.out.print("Digite um valor :\n ");
         double valor = in.nextDouble();
 
-        
+
     }
 }
