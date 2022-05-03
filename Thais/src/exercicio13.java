@@ -6,16 +6,15 @@ public class exercicio13 {
 
         Scanner in = new Scanner(System.in);
         System.out.print("Digite o número de maçãs compradas :\n ");
-        double maças = in.nextDouble();
+        int maças = in.nextInt();
 
         if (maças<12){
             double var1 = (maças*1.30);
-
+            System.out.printf("O valor total da compra é: %.2f" , var1);
         } else {
             double var2 = (maças*1.00);
-
-            System.out.println("O valor total da compra é: "+ var2);
+            System.out.printf("O valor total da compra é: %.2f", var2);
         }
     }
 }
-
+//certoo corrigido
