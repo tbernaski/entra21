@@ -33,7 +33,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.exercicio34">
+  <component name="RunManager" selected="Application.exerciciohoje">
     <configuration name="exercicio17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicio17" />
       <module name="Thais" />
@@ -43,13 +43,6 @@
     </configuration>
     <configuration name="exercicio17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicio17" />
-      <module name="Thais" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="exercicio18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicio18" />
       <module name="Thais" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,13 +69,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="exerciciohoje" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exerciciohoje" />
+      <module name="Thais" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.exerciciohoje" />
         <item itemvalue="Application.exercicio34" />
         <item itemvalue="Application.exercicio33" />
         <item itemvalue="Application.exerciciodia32" />
         <item itemvalue="Application.exercicio17" />
-        <item itemvalue="Application.exercicio18" />
       </list>
     </recent_temporary>
   </component>
