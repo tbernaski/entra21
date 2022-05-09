@@ -33,44 +33,37 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.exercicioseis3">
-    <configuration name="exercicio17" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicio17" />
+  <component name="RunManager" selected="Application.exercíciodia92">
+    <configuration name="exercíciodia9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercíciodia9" />
       <module name="Thais" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exercicio20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicio20" />
+    <configuration name="exercíciodia92" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercíciodia92" />
       <module name="Thais" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exerciciodiasseis1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exerciciodiasseis1" />
+    <configuration name="exercíciodiasseis1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercíciodiasseis1" />
       <module name="Thais" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exerciciohoje" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exerciciohoje" />
+    <configuration name="exercícioseis2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercícioseis2" />
       <module name="Thais" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exercicioseis2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicioseis2" />
-      <module name="Thais" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="exercicioseis3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercicioseis3" />
+    <configuration name="exercícioseis3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercícioseis3" />
       <module name="Thais" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,11 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.exercicioseis3" />
-        <item itemvalue="Application.exercicioseis2" />
-        <item itemvalue="Application.exerciciodiasseis1" />
-        <item itemvalue="Application.exercicio20" />
-        <item itemvalue="Application.exerciciohoje" />
+        <item itemvalue="Application.exercíciodia92" />
+        <item itemvalue="Application.exercíciodia9" />
+        <item itemvalue="Application.exercícioseis3" />
+        <item itemvalue="Application.exercícioseis2" />
+        <item itemvalue="Application.exercíciodiasseis1" />
       </list>
     </recent_temporary>
   </component>
@@ -112,56 +105,61 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/exercicio4.java</url>
+          <url>file://$PROJECT_DIR$/src/exercício4.java</url>
           <line>2</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/exercicio5.java</url>
+          <url>file://$PROJECT_DIR$/src/exercício5.java</url>
           <line>13</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/exercicio13.java</url>
+          <url>file://$PROJECT_DIR$/src/exercício13.java</url>
           <line>2</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/exercicioseis2.java</url>
+          <url>file://$PROJECT_DIR$/src/exercícioseis2.java</url>
           <line>4</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/exercíciodia92.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/exercicio7.java</url>
+          <url>file://$PROJECT_DIR$/src/exercício7.java</url>
           <line>3</line>
-          <properties class="exercicio7" method="main">
+          <properties class="exercício7" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/exercicio12.java</url>
+          <url>file://$PROJECT_DIR$/src/exercício12.java</url>
           <line>3</line>
-          <properties class="exercicio12" method="main">
+          <properties class="exercício12" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/exercicio13.java</url>
+          <url>file://$PROJECT_DIR$/src/exercício13.java</url>
           <line>4</line>
-          <properties class="exercicio13" method="main">
+          <properties class="exercício13" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/exercicio34.java</url>
+          <url>file://$PROJECT_DIR$/src/exercício34.java</url>
           <line>3</line>
-          <properties class="exercicio34" method="main">
+          <properties class="exercício34" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
