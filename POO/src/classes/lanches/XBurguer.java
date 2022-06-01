@@ -8,7 +8,7 @@ public class XBurguer extends Sanduiche {
         this.adicionarIngrediente("Queijunto");
         this.adicionarIngrediente("Preijo");
         this.adicionarIngrediente("Pão");
-        this.tipo = "XBurguer";
+        this.setTipo("XBurguer");
     }
 
     @Override //java usa isso aqui agora

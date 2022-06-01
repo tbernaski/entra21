@@ -10,7 +10,7 @@ public class MiniPizza extends Lanche {
         this.adicionarIngrediente("Massa");
         this.adicionarIngrediente("Massa de Tomate");
         this.adicionarIngrediente("Queijo Mussarela");
-        this.tipo = "Mini Pizza";
+        this.setTipo("Mini Pizza");
     }
 
     public void adicionarSaborEIngredientes(String sabor){
@@ -41,9 +41,9 @@ public class MiniPizza extends Lanche {
     @Override //java usa isso aqui agora
     public void montarComanda() {
         if (this.isBordaRechaeda()){
-            System.out.println("====" + this.tipo + " - " + ((MiniPizza) this).sabor + "====");
+            System.out.println("====" + this.setTipo(+ " - " + ((MiniPizza) this).sabor + "===="));
         }else{
-            System.out.println("====" + this.tipo + "====");
+            System.out.println("====" + this.setTipo(+ "===="));
         }
 
 

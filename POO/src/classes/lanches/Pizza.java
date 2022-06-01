@@ -4,7 +4,7 @@ public class Pizza extends MiniPizza{
     private String tamanho;
 
     public Pizza (){
-        this.tipo = "Pizza";
+        this.setTipo("Pizza");
     }
     @Override
     public void montarComanda(){
