@@ -1,4 +1,4 @@
-package classes;
+package classes.lanches;
 
 public class Pizza extends MiniPizza{
     private String tamanho;
@@ -6,11 +6,7 @@ public class Pizza extends MiniPizza{
     public Pizza (){
         this.setTipo("Pizza");
     }
-    @Override
-    public void montarComanda(){
-        super.montarComanda();
-        System.out.println("Tamanho: "+this.getTamanho());
-    }
+
     public void setTamanho(String tamanho){ //seta o valor da variável
         this.tamanho= tamanho;
     }

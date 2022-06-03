@@ -1,4 +1,4 @@
-package classes;
+package classes.lanches;
 public class XBurguer extends Sanduiche {
 
     private boolean aberto;
@@ -9,14 +9,6 @@ public class XBurguer extends Sanduiche {
         this.adicionarIngrediente("Preijo");
         this.adicionarIngrediente("Pão");
         this.setTipo("XBurguer");
-    }
-
-    @Override //java usa isso aqui agora
-    public void montarComanda() {
-        super.montarComanda(); //precisa para referenciar a classe lanche
-        if (this.aberto) {
-            System.out.println("-- LANCHE ABERTO --");
-        }
     }
 
     public void setAberto(boolean aberto) {

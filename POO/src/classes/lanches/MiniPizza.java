@@ -1,4 +1,4 @@
-package classes;
+package classes.lanches;
 
 public class MiniPizza extends Lanche {
     private boolean bordaRechaeda;
@@ -36,20 +36,6 @@ public class MiniPizza extends Lanche {
                 this.adicionarIngrediente("Cebola");
                 this.adicionarIngrediente("Ovo");
                 break;
-        }
-    }
-    @Override //java usa isso aqui agora
-    public void montarComanda() {
-        if (this.isBordaRechaeda()){
-            System.out.println("====" + this.setTipo(+ " - " + ((MiniPizza) this).sabor + "===="));
-        }else{
-            System.out.println("====" + this.setTipo(+ "===="));
-        }
-
-
-        super.montarComanda(); //precisa para referenciar a classe lanche
-        if (this.bordaRechaeda) {
-            System.out.println("bordaRechaeda" + saborBorda.toUpperCase());
         }
     }
         //getters e setters
