@@ -3,9 +3,9 @@ package classes.cliente;
 import classes.pedido.Pedido;
 
 public class Cliente {
-    private String nome;
-    private Pedido pedido;
-
+    private String nome;                    //agregação- tem um
+    private Pedido pedido;                 //composição - é parte
+                                          //herança- é um
     public Cliente(){
         this.setPedido(new Pedido());
     }
