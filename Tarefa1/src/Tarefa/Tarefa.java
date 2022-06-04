@@ -9,6 +9,7 @@ public class Tarefa {
     private boolean completa;
     private int ordem;
 
+    private ChecklistItem[] checklist;
 
     public Tarefa() {
         this.setUuid(UUID.randomUUID().toString());
@@ -49,5 +50,11 @@ public class Tarefa {
     }
     public int getOrdem() {
         return ordem;
+    }
+    public ChecklistItem[] getChecklist() {
+        return checklist;
+    }
+    public void setChecklist(ChecklistItem[] checklist) {
+        this.checklist = checklist;
     }
 }
