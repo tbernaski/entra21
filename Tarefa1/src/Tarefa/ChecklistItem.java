@@ -11,8 +11,6 @@ public class ChecklistItem {
     }
 
 
-
-
 //getters e setters
 
     public String getUuid() {
