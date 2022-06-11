@@ -2,7 +2,8 @@ import classes.cliente.Cliente;
 import classes.lanches.*;
 
 import java.util.Scanner;
-
+//polimorfismo pensar "instanceof
+//interface
 public class Main {
     public static Scanner in = new Scanner(System.in);
     public static void main(String[] args) {

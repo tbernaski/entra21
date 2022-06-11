@@ -1,6 +1,6 @@
 package Livraria;
 
-public class Avaliacao {  //checar dps
+public class Avaliacao {
 
     private double rating;
     private String nome;
