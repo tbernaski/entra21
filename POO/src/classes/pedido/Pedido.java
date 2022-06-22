@@ -2,13 +2,14 @@ package classes.pedido;
 
 import classes.lanches.*;
 
+import java.util.ArrayList;
+
 public class Pedido {
     private Lanche[] lanches = new Lanche[10];
 
 
     public void imprimirComanda() {
         for (Lanche l : this.getLanches()) {
-            if (l != null) {
                 if (l instanceof MiniPizza) {
                     MiniPizza mp = ((MiniPizza) l);
                     System.out.println("====" + l.getTipo() + " - " + mp.getSabor() + "====");
@@ -48,28 +49,22 @@ public class Pedido {
             System.out.printf("Valor total do pedido: R$%.2f\n", this.calcularValorTotal());
             System.out.println("-------------------------------");
         }
+    -
+
+    public double calcularValorTotal() {
+        double vlorTotal = 0;
+        for (Lanche l : this.getLanches()) {
+                vlorTotal += l.getValor();
+            }
+        }
+        return vlorTotal;
     }
 
-        public double calcularValorTotal (){
-            double vlorTotal = 0;
-            for (Lanche l : this.getLanches()) {
-                if (l != null) {
-                    vlorTotal += l.getValor();
-                }
-            }
-            return vlorTotal;
-        }
+    public void adicionarLanche(Lanche lanche) {
+        this.lanches.add(lanche);
 
-        public void adicionarLanche (Lanche lanche){
-            for (int i = 0; i < 10; i++) {
-                if (this.lanches[i] == null) {
-                    this.lanches[i] = lanche;
-                    break;
-                }
-            }
-        }
-
-        public Lanche[] getLanches () {
+        public ArrayList<Lanche> getLanches() {
             return this.lanches;
         }
     }
+}
