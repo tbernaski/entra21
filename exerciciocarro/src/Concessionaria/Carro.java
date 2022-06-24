@@ -1,11 +1,9 @@
-import java.util.HashMap;
+package Concessionaria;
 
 public class Carro {
 
     String modelo;
     double valorVenda;
-
-
 
     public String getModelo() {
         return modelo;
@@ -23,5 +21,3 @@ public class Carro {
         this.valorVenda = valorVenda;
     }
 }
-
-

@@ -1,4 +1,5 @@
 package classes.lanches;
+
 public class XSalada extends XBurguer {
 
     public XSalada() {
@@ -8,4 +9,5 @@ public class XSalada extends XBurguer {
         this.adicionarIngrediente("Maionese");
         this.setTipo("XSalada");
     }
+
 }
