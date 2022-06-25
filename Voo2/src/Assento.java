@@ -10,10 +10,6 @@ public abstract class Assento{
 
 
 
-
-
-
-
     public boolean isOcupado() {
         return ocupado;
     }
