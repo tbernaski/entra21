@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public interface MeioTransporte {    //interface só descrição de método
 
     public boolean verificaOcupacao(String assento);

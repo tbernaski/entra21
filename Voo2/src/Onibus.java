@@ -53,23 +53,31 @@ public class Onibus implements MeioTransporte {
         for (AssentoOnibus a : assentos) {
             cont++;
             if ((cont % 4) == 0) {
-                System.out.printf("[XX]\n");
-            }else {
-                System.out.println("[" + a.getLugar() + "]\n");
-            }else{
-            if (!a.isOcupado()){
-                System.out.println("XX");
+                if (a.isOcupado()) {
+                    System.out.printf("[XX]\n");
+                } else {
+                    System.out.printf("["+a.getLugar()+"]\n");
+                }
+            } else {
+                if (a.isOcupado()) {
+                    System.out.printf("[XX] ");
+                } else {
+                    System.out.print("[" + a.getLugar() + "] ");
+                }
             }
+            if ((cont % 2) == 0 && (cont % 4) != 0) {
+                System.out.print("|| ");
             }
         }
     }
+
 
 
     @Override
     public Assento getAssento(String assento) {
         for (AssentoOnibus a : this.assentos) {
             if (a.getLugar().equalsIgnoreCase(assento))
-            return a;
+                return a;
         }
         return null;
     }
