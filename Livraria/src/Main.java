@@ -170,13 +170,13 @@ public class Main {
         } else {
             System.out.println("");
             for (int b = 0; b < e.getCapMaxima(); b++) {
-                if (e.getItens()[b] != null) {
-                    if (e.getItens()[b] instanceof Livro) {
-                        System.out.println(b + " - " + e.getItens()[b].getTitulo() + " (" + e.getItens()[b].getGenero() + "): " + ((Livro) e.getItens()[b]).getAnoPublicacao() + " - "
-                                + ((Livro) e.getItens()[b]).getAutor());
-                    } else if (e.getItens()[b] instanceof DVD) {
-                        System.out.println(b + " - " + e.getItens()[b].getTitulo() + " (" + e.getItens()[b].getGenero() + "): " + ((DVD) e.getItens()[b]).getAnoLancamento() + " - "
-                                + ((DVD) e.getItens()[b]).getDiretor());
+                if (e.getItens().get(b) != null) {
+                    if (e.getItens().get(b) instanceof Livro) {
+                        System.out.println(b + " - " + e.getItens().get(b).getTitulo() + " (" + e.getItens().get(b).getGenero() + "): " + ((Livro) e.getItens().get(b)).getAnoPublicacao() + " - "
+                                + ((Livro) e.getItens().get(b)).getAutor());
+                    } else if (e.getItens().get(b) instanceof DVD) {
+                        System.out.println(b + " - " + e.getItens().get(b).getTitulo() + " (" + e.getItens().get(b).getGenero() + "): " + ((DVD) e.getItens().get(b)).getAnoLancamento() + " - "
+                                + ((DVD) e.getItens().get(b)).getDiretor());
                     }
                 }
             }
