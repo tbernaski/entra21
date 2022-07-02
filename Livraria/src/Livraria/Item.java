@@ -10,7 +10,6 @@ public abstract class Item {       //classe abstrata
     private String genero;
     private double valor;
 
-
     private ArrayList<Avaliacao> avaliacoes = new ArrayList<>();
 
 
@@ -24,13 +23,23 @@ public abstract class Item {       //classe abstrata
         in.nextLine();
         System.out.print("Informe algum feedback (opcional): ");
         a.setFeedback(in.nextLine());
-       this.avaliacoes.add(a);
+        this.avaliacoes.add(a);
     }
 
 
     public double getTotalRating() {
         return this.avaliacoes.stream().mapToDouble(av -> getTotalRating()).sum() / this.avaliacoes.size();
     }
+
+    public abstract void montarDetalhes(Scanner in);
+
+
+
+    public abstract void mostrarDetalhes();
+
+
+
+
 
 
     //getters e setters

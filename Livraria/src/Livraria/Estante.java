@@ -34,16 +34,16 @@ public class Estante {
 
 
     public boolean adicionarItem(Item item) {
-            if (!estanteCheia()){
-                this.itens.add(item);
-                return true;
-            }
+        if (!estanteCheia()) {
+            this.itens.add(item);
+            return true;
+        }
         return false;
     }
 
 
     public Item removerItem(int posicao) {
-        return this.itens.remove (posicao);
+        return this.itens.remove(posicao);
     }
 
 
