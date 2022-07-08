@@ -3,8 +3,8 @@ package Livraria;
 public enum EMenuItem implements IMenu{
 
     AVALIACOES(1, "Ver Avaliações"),
-    AVALIAR(2, "Avaliar"),
-    SAIR(0, "Sair"),
+    AVALIAR_ITEM(2, "Avaliar"),
+    VOLTAR(0, "Sair"),
 
     MOSTRAR_DETALHES (3, "Mostrar Detalhes");
 

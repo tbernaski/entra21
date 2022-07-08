@@ -1,6 +1,7 @@
 import classes.cliente.Cliente;
 import classes.lanches.*;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -21,42 +22,41 @@ public class Main {
     }
 
     private static Lanche montarLanche() {
-        System.out.println("-MENU: Escolha uma opção-");
-        System.out.println("(1) - X-Salada");
-        System.out.println("(2) - X-Burguer");
-        System.out.println("(3) - Misto Quente");
-        System.out.println("(4) - Hot Dog");
-        System.out.println("(5) - Mini Pizza");
-        System.out.println("(6) - Pizza");
-        int escolha = in.nextInt();
-        in.nextLine();
         Lanche lanche = null;
-        switch (escolha) {
-            case 1:
-                lanche = new XSalada();
-                break;
-            case 2:
-                lanche = new XBurguer();
-                break;
-            case 3:
-                lanche = new MistoQuente();
-                break;
-            case 4:
-                lanche = new HotDog();
-                break;
-            case 5:
-                lanche = new MiniPizza();
-                break;
-            case 6:
-                lanche = new Pizza();
-                break;
-            default:
-                System.err.println("Escolha uma opção válida!");
+        while (lanche == null) {
+            System.out.println("-MENU: Escolha uma opção-");
+            System.out.println("(1) - X-Salada");
+            System.out.println("(2) - X-Burguer");
+            System.out.println("(3) - Misto Quente");
+            System.out.println("(4) - Hot Dog");
+            System.out.println("(5) - Mini Pizza");
+            System.out.println("(6) - Pizza");
+            int escolha = 0;
+            try {
+                escolha = in.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Escolha um lanche válido!");
+            } finally {
+                in.nextLine();
+            }
+            ETipoLanche escolha = (ETipoLanche) escolherOpcao(null);
+            switch (escolha) {
+                case 1 -> X_SALADA= new XSalada();
+                case 2 -> X_BURGUER= new XBurguer();
+                case 3 -> MISTO_QUENTE = new MistoQuente();
+                case 4 -> HOT_DOG = new HotDog();
+                case 5 -> MINI_PIZZA = new MiniPizza();
+                case 6 -> PIZZA = new Pizza();
+                default -> System.err.println("Escolha uma opção válida!");
+            }
         }
         lanche.montarDetalhesLanche(in);
         System.out.print("Informe o valor do(a) "+lanche.getTipo()+": R$");
         lanche.setValor(in.nextDouble());
         in.nextLine();
         return lanche;
+    }
+
+    private static Object escolherOpcao(Object o) {
     }
 }

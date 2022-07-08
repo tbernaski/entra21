@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public abstract class Sanduiche extends Lanche{
 
-    private HashMap<String, Double> adicionais = new HashMap>;
+    private HashMap<String, Double> adicionais = new HashMap><;
 
     public void adicionarAdicional(String adicional) {
         this.adicionais.put(adicional);
     }
 
-    public ArrayList<String> getAdicionais() {
+    public HashMap<String, Double> getAdicionais() {
         return adicionais;
     }
 
