@@ -12,3 +12,12 @@ div.footer{
     padding: 24px;
     background-color: rgb(253, 203, 253);
 }
+
+a.mylink{
+    font-size: 20px;
+    font-family: italic;
+}
+
+/* # para id */
+
+/* . para div = classe */
