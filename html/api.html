@@ -1,34 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="styles.css"> 
-    <script type= "text/javascript">
-    function loadImg(){
-        let req = new XMLHttpRequest();
-        req.open("GET", "https://dog.ceo/api/breeds/image/random", false);
-        req.send(null);
-        document.getElementsByTagName("img")[0].src =
-        JSON.parse(req.responseText). message;
-
-
-
- }
-
-
-    </script>
-</head>
-<body">
-<img src />
-    <button onclick="loadImg()"> Get DOG</button>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,16 +8,98 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css"> 
     <script type= "text/javascript">
-        function loadCharList(){
-            let req= new XMLHttpRequest();
-            req.open("GET", "http://hp-api.herokuapp.com/api/characters", false);
-            req.send(null);
-            document.getElementById("charlist").innerHTML=
-            JSON.parse(req.responseText).map(char=>`<li>${char.name}</li>`).join("");
+
+ function requestImg(text){
+
+let url = text == null || text == "" ?
+"https://cataas.com/cat?json=true" :
+`https://cataas.com/cat/says${texto}?json=true`;
+
+let req = new XMLHttpRequest();
+    req.open("GET", url, true); 
+    req.onload = () => {
+        let img = document.getElementsByTagName("img")[0]
+        img.src ="https://cataas.com" +
+        JSON.parse(req.responseText). url;
+        img.onload = () => document.getElementsByTagName ("button")[0].disabled=false;
+    }
+    document.getElementsByTagName ("button") [0].disabled=true;
+    req.send(null);
+}
+
+    function loadImgWithText(text){
+
+        let texto = prompt ("Digite o texto para a imagem");
+    
+        let req = new XMLHttpRequest();
+        req.open("GET", `https://cataas.com/cat/says${texto}?json=true`, true);
+        req.onload = () => {
+            let img = document.getElementsByTagName("img")[0]
+            img.src ="https://cataas.com" +
+            JSON.parse(req.responseText). url;
+            img.onload = () => document.getElementsByTagName ("button")[0].disabled=false;
         }
-        </script>
+        document.getElementsByTagName ("button") [0].disabled=true;
+        req.send(null);
+    }
+
+    function loadImg(){
+    requestImg();
+}
+      
+  // let req = new XMLHttpRequest();
+        // req.open("GET", "https://cataas.com/cat?json=true");
+        // req.send(null);
+        // document.getElementsByTagName("img")[0].src = "https://cataas.com" +
+        // JSON.parse(req.responseText). url;
+</script>
+
 </head>
-<body onload="loadCharList()">
-    <ul id ="charlist"></ul>
+<body>
+    <style>
+div.apu{
+ text-align: center;
+                flex- color: blue;
+                font-family: 'Poppins';
+                flex-direction: column;
+            
+         }
+        body{
+ background-color: #ffffb3;
+    }
+
+    </style>
+        <img src>
+        <div class="apu"><button onclick="loadImg()"> Get CAT</button> </div> 
+        <div class="apu"><button onclick="loadImgWithText()"> Digite um texto para aparecer uma imagem</button> </div> 
+        </style>
 </body>
-</html>
+</html> 
+
+
+
+
+<!-- // 
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+//     <link rel="stylesheet" href="styles.css"> 
+//     <script type= "text/javascript">
+//         function loadCharList(){
+//             let req= new XMLHttpRequest();
+//             req.open("GET", "http://hp-api.herokuapp.com/api/characters", false);
+//             req.send(null);
+//             document.getElementById("charlist").innerHTML=
+//             JSON.parse(req.responseText).map(char=>`<li>${char.name}</li>`).join("");
+//         }
+//         </script>
+// </head>
+// <body onload="loadCharList()">
+//     <ul id ="charlist"></ul>
+// </body>
+// </html> -->
