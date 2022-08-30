@@ -1,3 +1,7 @@
+body {
+    background-color: #f1f1f1;
+}
+
 /* p {
     color: red;
     margin-top: 0;
@@ -12,7 +16,7 @@
 } */
 
 .w-50{
-   width: 40%;
+   width: 50%;
 }
 
 .w-40{
@@ -32,36 +36,6 @@
     color: black;
     border-radius: 4px;
     
-}
-
-.btn.btn-warning{
-background-color: rgb(228,209,62);
-}
-
-.btn.btn-danger{
-    background-color: rgb(228, 62, 62);
-    }
-
-
- .btn.btn-danger:hover{
-        background-color: rgb(247, 77, 77);
-        }
-
-.btn.btn-active{
-    background-color: rgb(179, 43, 43);
-    }
-       
-.btn.btn-warning:hover{
-        background-color: rgb(247,277,77);
-            }
-
-.btn.btn-warning:active{
-        background-color: rgb(179,163,43);
-            }
-                
-
-.edit-cell button {
-display: inline-block;
 }
 
 .edit-cell a:hover {
@@ -90,6 +64,7 @@ tr {
 border-bottom: 1px solid #b3b3b3;
 }
 
+
 tfoot tr{
     border-bottom: 0;
 }
@@ -106,76 +81,53 @@ small {
     font-family: 'Poppins';
 }
 
-/* @media only screen and (max-width: 600px) { */
-    /*html, body {
-        background-color: darkseagreen;
-    }*/
-    
-    /*ul.navlist {
-        margin: 0 48px;
-    }*/
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
 
-    .titulos{
-        background-color: white;
-        font-family:'Poppins';
-        text-align: center;
-        padding: 24px;
-        box-shadow: 0px 8px 20px -8px black;
-        margin: 30px;
-        width: 50%;
-        margin-bottom: 32px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .a{
-        text-align: center;
-    }
-
-    .forms{
-        box-shadow: 0px 8px 20px -8px black;
-        background-color: white;
-        margin-bottom: 2px;
-    }
-
-.botoes{
-    box-shadow: 0px 8px 20px -8px black;
-    background-color: white;
-    margin-bottom: 2px;
-    font-size: large;
+*{
+    font-family: 'Poppins';
 }
 
-.btn{
-background-color: transparent;
-border: 0;
-padding: 8px 16px;
-cursor: pointer;
-border-radius: 8px;
+html, body {
+    height: 100%;
 }
 
-.btn.btn-sucess{
-    background-color: rgb(75,191,75);
+button{
+    background-color: rgb(255, 238, 6);
+    border: 0;
+    border-radius: 4px;
+    padding: 5px;
 }
 
-.btn.btn-sucess:hover {
-    background-color: rgb(100,220,100);
+input {
+    background-color: rgb(247, 247, 247);
+    border: 0;
+    width: 200px;
+    border-bottom: 1px solid black;
 }
 
-.btn.btn-sucess:active {
-    background-color:  rgb(54,153,54);
+input:focus-visible {
+    outline: none;
 }
-
-/* .apu{
- text-align: center;
- box-shadow: 0px 8px 20px -8px rgb(252, 227, 0);
- background-color: white;
- margin-bottom: 2px;
- font-size: large;
-} */
-
-/* .ap{
+.flex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-} */
+}
 
-
-
+#msg {
+    font-size: 10px;
+}

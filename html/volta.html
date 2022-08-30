@@ -7,70 +7,60 @@
     <title>Jogo Volta ao Mundo</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css"> 
-    <script type="text/javascript">
-
+</head>
+<body>
+    <div class="flex">
+     <h1>Jogo: Volta ao Mundo</h1>
+     <p id="msg"></p>
+     <input type="text" id="pais">
+     <br>
+ <button onclick="jogo()">Posso ir?</button>
+</div>
+<style>
+    body{
+    background-color: #ffffb3;
+       }
+       table, td{
+           border: 1px, solid, black;
+       }
+   
+   </style>
+<script type="text/javascript">
+var letras = ["v","o","l","t","a"];
+        var paises = {
+            "v":["Vaticano","Venezuela"],
+            "o":["Omã","Oliva"],
+            "l":["Londres","Lisboa"],
+            "t":["Tailândia","Tunísia"],
+            "a":["Alaska","Alemanha"]
+        };    
+        let rep = 0;
+        let tentativas = 0;
+        function jogo() {
+            msg.classList = [];
+            let pais = document.getElementById("pais").value;
+            document.getElementById("pais").value = "";
+            if (pais.charAt(0).toLowerCase() == letras[rep]) {
+                tentativas = 0;
+                msg.classList.add("acerto");
+                document.getElementById("msg").innerHTML = `Você pode viajar para ${pais}`;
+                if (!(paises[letras[rep]].includes(pais))) {
+                    paises[letras[rep]].push(pais);
+                }
+                rep++;
+            } else {
+                tentativas++
+                msg.classList.add("erro");
+                document.getElementById("msg").innerHTML = `Você não pode viajar para ${pais}`;
+                
+            }
 var string = palavra;
 var char = letra;
 
-function onAdd(text){
-text
-
-
-
-}
-<style>
-table, td{
-        border: 1px, solid, black;
-    }
-</style>
-
-
-
-if (palavra != 
-'Vaticano', 'Vietna',
-'Orlando', 'Oliva',
-'Lisboa', 'Luxemburgo',
- 'Tailandia', 'Togo',
- 'Africa', 'Alemanha')
-{
-
-
-
-
-// "v" ; ['Vaticano', 'Vietna'],
-// "o" ; ['Orlando', 'Oliva'],
-// "l" ; ['Lisboa', 'Luxemburgo'],
-// "t" ; ['Tailandia', 'Togo'],
-// "a" ; ['Africa', 'Alemanha'])}
-
-
-}else{
-return  "palavra está incorreta... Tente Novamente!";
-    }
-
-reset()
-
-<body>
-    <div class="a">
-        <h2>----- Jogo Volta ao Mundo -----</h2>
-        </div>
-
+        }
 
 
 
 </script>
-</head>
-
-
 </body>
-<style>
- body{
- background-color: #ffffb3;
-    }
-    table, td{
-        border: 1px, solid, black;
-    }
-
-</style>
-<div class="botao"><button onclick="onAdd()">Posso ir?</button> </div> 
 </html>
