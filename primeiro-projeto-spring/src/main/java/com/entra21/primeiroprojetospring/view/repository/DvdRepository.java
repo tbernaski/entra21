@@ -1,9 +1,9 @@
 package com.entra21.primeiroprojetospring.view.repository;
 
-import com.entra21.primeiroprojetospring.model.entity.GeneroEntity;
+import com.entra21.primeiroprojetospring.model.entity.DvdEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface GeneroRepository extends JpaRepository<GeneroEntity, Long> {
+public interface DvdRepository extends JpaRepository <DvdEntity, Long> {
 }
