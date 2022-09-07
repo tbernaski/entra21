@@ -21,6 +21,4 @@ public class DvdRestController {
         return dvdRepository.findAll();
     }
 
-
-
 }
