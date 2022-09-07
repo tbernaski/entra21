@@ -1,9 +1,8 @@
 package com.entra21.primeiroprojetospring.controller;
 
-import com.entra21.primeiroprojetospring.model.dto.FranquiaDTO;
 import com.entra21.primeiroprojetospring.model.dto.FranquiaPayloadDTO;
-import com.entra21.primeiroprojetospring.model.dto.ItemDTO;
-import lombok.Data;
+import com.entra21.primeiroprojetospring.model.dto.ItemListagemDTO;
+import com.entra21.primeiroprojetospring.view.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,10 +13,10 @@ import java.util.List;
 public class ItemRestController {
 
     @Autowired
-    private itemRepository itemRepository;
+    private ItemRepository itemRepository;
 
     @GetMapping
-    public List<ItemDTO> getItems() {
+    public List<ItemListagemDTO> getItems() {
         return itemService.getAll();
     }
 
