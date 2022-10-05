@@ -1,0 +1,7 @@
+
+<h3 style="display: inline; margin: right 2px;">
+    {{ hero.heroName }}
+
+</h3>
+<small [ngStyle]="{'color': (hero.alive === 'dead') ? 'grey' : 'black'}" > -{{hero.alive}}-</small>
+<small [ngStyle]="{'color': (hero.universe === 'DC') ? 'blue' : 'red'}"> ({{ hero.universe }})</small>

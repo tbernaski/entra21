@@ -6,8 +6,7 @@ import javax.persistence.*;
 
 @Data //lombok
 @Entity
-@Table(name = "franquia")
-public class FranquiaEntity {
+@Table(name = "franquia")public class FranquiaEntity {
     @Column(name = "id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
