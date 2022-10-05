@@ -15,4 +15,7 @@ export class HeroListItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showID = () => {
+    alert(this.hero.secretIdentity ?? 'Desconhecido');
+  }
 }
