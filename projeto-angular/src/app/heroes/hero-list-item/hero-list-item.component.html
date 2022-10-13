@@ -6,4 +6,17 @@
 </h3>
 <small [ngStyle]="{'color': (hero.alive === 'dead') ? 'grey' : 'black'}" > -{{hero.alive}}-</small>
 <small [ngStyle]="{'color': (hero.universe === 'DC') ? 'blue' : 'red'}"> ({{ hero.universe }})</small>
+<small (click) = "showID()"
+style= "cursor: pointer;"
+title="Ver identidade secreta">👁️</small>
+
+<small (click)= "onEdit()"
+style= "cursor: pointer;"
+title="Editar">✏️</small>
+
+<small (click)= "onDelete()"
+style= "cursor: pointer;"
+title="Excluir">🗑️</small>
+
+
 </div>

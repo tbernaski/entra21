@@ -1,0 +1,21 @@
+<form [formGroup]="heroForm" (submit) = onSubmit
+
+style = "display: flex; flex-direction: column; width: 25%; gap: 4px;">
+
+<label for = "name"> Name: </label>
+<input type=" text" name ="name" id="name " formControlName="name" />
+
+<label for = "secretIdentity"> Nome: </label>
+<input type=" text" name ="secretIdentity" 
+id="secretIdentity " formControlName="secretIdentity" />
+
+<div>
+<input type="radio" name = "universe" value="DC"
+    id=" inverse_DC" formControlName= "universe">
+<input type="radio" name = "universe" value="marvel"
+    id=" inverse_marvel" formControlName= "universe">
+</div>
+
+<button type = "submit" [disabled] = "!heroForm.valid">{{ editingHero !=null? 'Atualizar' : 'Criar'}}</button>
+<button type = "button" (click) = "cancel()">Cancelar</button>
+</form>
